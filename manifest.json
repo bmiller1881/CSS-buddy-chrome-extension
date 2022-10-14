@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Brandon Extension",
+  "description": "",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery-3.1.1.min.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "/assets/on.png",
+      "24": "/assets/on.png",
+      "32": "/assets/on.png"
+    }
+  },
+  "permissions": ["activeTab", "scripting"]
+}
